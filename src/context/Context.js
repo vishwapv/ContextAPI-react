@@ -1,7 +1,7 @@
 import { React, createContext } from "react";
 export const WareHouse = createContext();
 const Context = ({ children }) => {
-  const bags = "pen";
+  const bags = "pens";
   const books = "books";
   // to pass this variable we have define the value in create context
   return (
