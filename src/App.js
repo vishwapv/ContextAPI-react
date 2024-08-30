@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Context from "./context/Context";
+import Client1 from "./components/Client1";
+import Client2 from "./components/Client2";
 
+// Create context
 function App() {
+  // COntext is the parent
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Context>
+      {/* // Client1 is children */}
+      <Client1 />
+      <Client2 />
+    </Context>
   );
 }
 
